@@ -1,0 +1,17 @@
+<!--miniprogram/pages/operate.wxml-->
+<view class="text-title">
+  <text>  操作说明： </text>
+</view>
+
+<view class="text_area" wx:for="{{operate_text}}">
+  <view class="summary">
+    <text>{{index+1}}、{{item.summary}} </text>
+  </view>
+  <view class="text_point" wx:for="{{item.text}}" wx:for-index="idx" wx:for-item="point">
+    <text>{{"● "+point}} </text>
+  </view>
+</view>
+
+<button  bindtap="onTapConfirm" >返回</button>
+
+

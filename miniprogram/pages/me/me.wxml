@@ -1,0 +1,38 @@
+<!--pages/me/me.wxml-->
+<image class="bg" src="/images/bg.png" style="height:254rpx;width: 750rpx;"></image>
+<view wx:if="{{!userInfo}}">
+  <login bindonLogin="onTapLogin"></login>
+  <!-- <view class="login-card">
+    <view class="login-head"></view>
+    <view class="login-info">
+      <view class="login-text">Not Login</view>
+      <view class="login-tips">Click "Login" with WeChat account to shop</view>
+    </view>
+  </view>
+  <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">
+    Login</button> -->
+</view>
+
+<view class="user-card" wx:else>
+  <view class="user-info">
+    <image class="user-head" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user-name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="user-split"></view>
+  <view class="user-options">
+    <view class="option" bindtap="onTapOperate">
+      <view class="option-title">操作说明</view>
+      <image class="option-arrow" src="/images/grey-arrow.png"></image>
+    </view>
+    <view class="option" bindtap="onTapService">
+      <view class="option-title">联系我们</view>
+      <image class="option-arrow" src="/images/grey-arrow.png"></image>
+    </view>
+  </view>
+  <view class="user-split"></view>
+</view>
+<view wx:if="{{userInfo}}">
+  <button  hidden="{{!can_invite}}" open-type="share" >邀请家人</button>
+</view>
+
+

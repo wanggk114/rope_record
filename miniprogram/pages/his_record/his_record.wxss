@@ -1,0 +1,64 @@
+/* pages/his_record/his_record.wxss */
+.table {
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td1 {
+    width:27%;
+    justify-content: center;
+    text-align: left;
+}
+
+.td2 {
+  width:13%;
+  justify-content: center;
+  text-align: left;
+}
+
+.td3 {
+  width:60%;
+  justify-content: center;
+  text-align: left;
+}
+
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th1 {
+  width: 25%;
+  justify-content: left;
+  background: #ccc;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+.th2 {
+  width: 15%;
+  justify-content: left;
+  background: #ccc;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+.th3 {
+  width: 60%;
+  justify-content: left;
+  background: #ccc;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

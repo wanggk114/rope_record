@@ -1,0 +1,72 @@
+<!--pages/home/home.wxml-->
+<!-- <view class="add-owner" bindtap="OnTapAddOwner">增加记录对象</view> -->
+<view class="pick-trapper">
+  <view class="section">
+    <view class="pick-title">选择记录日期:</view>
+    <picker mode="date" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="owner-rapper" >
+      <view class="pick-title">选择记录对象:</view>
+      <view class="owner-add" bindtap="OnTapAddOwner" >+</view>
+    </view>
+    <picker mode="selector" bindchange="bindOwnerChange" value="{{index}}" range="{{ownerList}}">
+      <view class="picker">
+        当前选择：{{ownerList[index]}}
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="title-section">
+  <view class="pick-title">次数记录：</view>
+  <view class="commit" bindtap="OnTapCommit">提交记录</view>
+</view>
+<view class="input-section">
+  <view class="count-rapper" wx:for="{{valueList}}" wx:key="index">
+    <view class="count"> 第{{item.index}}次：</view>
+    <input class="input_class" type="number" bindinput="bindKeyInput" value="{{item.value==''? '':item.value}}"
+      data-id="{{item.index}}" placeholder="输入次数" />
+    <view class="count-minus" bindtap="removRecord" data-id="{{item.index}}">-</view>
+    <!-- <view class="count-add" bindtap="addRecord"  data-id="{{item.index}}">+</view> -->
+  </view>
+</view>
+
+<view class="add-family" bindtap="OnTapAddFamily" hidden='{{!ifAddFamily}}'>增加家庭信息</view>
+
+<!-- 增加记录对象和家庭信息由同一个对话框实现 -->
+<!-- <modal hidden="{{!ifAdd}}" title="{{ifAddFamily?'添加家庭信息':'增加记录对象'}}" 
+       confirm-text="确定" cancel-text="取消" bindconfirm="confirm" bindcancel="cancel">
+  <input placeholder='请输入名称' bindinput='setValue'/>
+</modal> -->
+
+<!-- toast-box可由上面的modal组件代替 -->
+
+<view class='toast-box' hidden='{{!ifAdd}}'>
+  <view class='toastbg'></view>
+  <view class='showToast'>
+    <view class='toast-title' wx:if="{{ifAddFamily}}">
+      <text>添加家庭信息</text>
+    </view>
+    <view class='toast-title' wx:else>
+      <text>增加记录对象</text>
+    </view>
+    <view class='toast-main'>
+      <view class='toast-input'>
+        <input placeholder='请输入名称' bindinput='setValue' ></input>
+      </view>
+    </view>
+    <view class='toast-button'>
+      <view class='button1'>
+        <button catchtap='cancel'>取消</button>
+      </view>
+      <view class='button2'>
+        <button catchtap='confirm'>确定</button>
+      </view>
+    </view>
+  </view>
+</view>
+

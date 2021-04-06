@@ -1,0 +1,94 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "scopeDataCheck": false,
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "compileHotReLoad": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "autoAudits": false,
+    "newFeature": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "useIsolateContext": true,
+    "nodeModules": false,
+    "enhance": false,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "bundle": false
+  },
+  "appid": "wx1b014718f4da510a",
+  "projectname": "rope-record",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/trend/trend",
+          "pathName": "pages/trend/trend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/his_record/his_record",
+          "pathName": "pages/his_record/his_record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/invite/invite",
+          "pathName": "pages/invite/invite",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/operate/operate",
+          "pathName": "pages/operate/operate",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

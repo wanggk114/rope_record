@@ -1,0 +1,28 @@
+/* miniprogram/pages/operate.wxss */
+
+.text-title{
+color: rgb(83, 96, 138);
+font-size: larger;
+text-align: center;
+margin-top: 10rpx;
+}
+
+.summary{
+  color: rgb(79, 95, 114);
+  font-size: large;
+  text-align: left;
+  margin-top: 20rpx;
+}
+
+.text_point{
+  margin-top: 10rpx;
+}
+
+button {
+  /* margin: 100rpx 25% 10rpx 25%; */
+  margin-top: 100rpx ;
+  width: 40%;
+  text-align: center;
+  background: #F5E069;
+  opacity: 0.8;
+}

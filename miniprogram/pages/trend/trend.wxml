@@ -1,0 +1,13 @@
+<!--miniprogram/pages/trend.wxml-->
+
+<view class="container">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="select">
+  <text class="mytext">显示几天:</text>
+  <button class="button" bindtap="changeShowDay" data-num="7">7天</button>
+  <button class="button" bindtap="changeShowDay" data-num="30">30天</button>
+  <button class="button" bindtap="changeShowDay" data-num="90">90天</button>
+  <button class="button" bindtap="changeShowDay" data-num="all">所有</button>
+</view>
+

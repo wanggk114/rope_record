@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/his_record/his_record",
+    "pages/me/me",
+    "pages/invite/invite",
+    "pages/trend/trend",
+    "pages/operate/operate"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "rope record",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#5D5F64",
+    "selectedColor": "#5D5F64",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "登记",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-sel.png"
+      },
+      {
+        "text": "历史数据",
+        "pagePath": "pages/his_record/his_record",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-sel.png"
+      },
+      {
+        "text": "趋势图",
+        "pagePath": "pages/trend/trend",
+        "iconPath": "images/trend.png",
+        "selectedIconPath": "images/trend-sel.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/me/me",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-sel.png"
+      }
+    ]
+  }
+}

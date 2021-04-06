@@ -1,0 +1,193 @@
+/* pages/home/home.wxss */
+.pick-trapper{
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.section{
+  position: relative;
+  margin: 0rpx 30rpx 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  /*background-color: rgb(180, 240, 220);*/
+}
+
+.pick-title{
+  font-size: medium;
+  font-weight: bold;
+  font-size: 40rpx;
+  color: rgba(29, 29, 38, 0.8);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.title-section{
+  margin: 32rpx 52rpx 0;
+  display: flex;
+}
+
+.owner-rapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.commit{
+  justify-content:flex-end;
+  width: 200rpx;
+  line-height: 72rpx;
+  background: #F5E069;
+  margin-left: 200rpx;
+  /* color: rgba(52, 55, 61, 0.5); */
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 13rpx;
+  opacity:0.8
+}
+
+.input-section{
+  margin: 32rpx 52rpx 0;
+}
+.count-rapper{
+  position: relative;
+  line-height: 72rpx;
+  margin: 5rpx 5rpx; 
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+.count{
+  width: 150rpx;
+}
+
+.input_class{
+  background: #f3cfcf;
+  width: 200rpx;
+  height: 56rpx;
+  border-width: thick;
+  border-block: medium inset rgb(214, 214, 218);
+}
+
+.count-minus,
+.owner-add {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  border: 3rpx solid #F6E474;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 900;
+}
+.add-owner{
+  width: 200rpx;
+  /* margin-top: 30%; */
+  line-height: 72rpx;
+  background: #b3a34e;
+  margin-left: 460rpx;
+  /* color: rgba(52, 55, 61, 0.5); */
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 13rpx;
+  opacity:0.6
+}
+
+.add-family{
+  width: 300rpx;
+  margin-top: 10%;
+  line-height: 72rpx;
+  background: #b3a34e;
+  margin-left: 200rpx;
+  /* color: rgba(52, 55, 61, 0.5); */
+  text-align: center;
+  font-size: 36rpx;
+  border-radius: 13rpx;
+  opacity:0.8
+}
+
+/* 弹框设置 - start */
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  padding-left: 5%;
+  background-color: #2196f3;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.toast-button {
+  display: flex;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: red;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+}
+
+.button2 button{
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+/* 弹框设置 - send */
