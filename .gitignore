@@ -10,5 +10,11 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 
+
 # Node.js
 node_modules/
+
+# file
+*.bak
+*.war
+*.jar
